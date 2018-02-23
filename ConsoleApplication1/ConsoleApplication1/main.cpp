@@ -22,24 +22,22 @@ int main()
 
 	//two fake variables to loop through grid parameters
 	int f_x = 0;
-	int f_y = grid;
+	int f_y = 25;
 	//COORDINATE INCREMENTATION AND OBJECT CREATION LOOP
-	while ( f_y >= 1)				// loop for y (1) value
+	for (int k = f_y; k > 0; k--)
 	{
-		while (f_x < grid)				// loop for x (0) value
+		
+		for (int i = 0; i < grid; i++)
 		{
-			head.create(f_x, f_y);			// create new space class object with parameters f_x and f_y which are used as constructor argument to set array
-			
-			f_x++;						// increase x value
+			over_grid[f_x].set_coordinate((i+1), k);
+			f_x++;
 		}
 		
-		f_y--;	
-		head.create(f_x, f_y);			// decrease y value
-		f_x = 0;						// reset x coordinate value
-		
-		
 	}
-	system("pause");
+	
+	for (int i = 0; i < grid*grid; i++)
+		over_grid[i].print();
+	
 	return 0;
 	
 }

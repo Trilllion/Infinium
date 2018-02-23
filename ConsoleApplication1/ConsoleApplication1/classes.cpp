@@ -29,13 +29,6 @@ int space::array_to_int(int a[] )
 	return result;
 }
 
-space *space::create(int x, int y)
-{
-	space *store_address = new space (x,y);
-	object_address = store_address;
-	temporary_address = store_address;
-	return store_address;	
-}
 
 space::space()
 {
@@ -43,12 +36,17 @@ space::space()
 	coordinate_array[1] = grid_size;
 }
 
-space::space(int x, int y)
+void space::set_coordinate(int x, int y)
 {
 	 coordinate_array[0] = x;
 	 coordinate_array[1] = y;
 	
 	 
+}
+
+void space::print()
+{
+	std::cout << coordinate_array[0] << "-" << coordinate_array[1] << std::endl;
 }
 
 

@@ -15,15 +15,13 @@ public:
 	//ship type placeholder
 	int coordinate = 0;
 	int coordinate_array[2];
-	space *right = NULL;
-	space *down = NULL;
-	space *temporary_address = NULL;
 	//functions
 	int input_grid_size();
 	int array_to_int(int a[] );
 	space *create(int x, int y);
 	space();													//constructor
-	space(int x, int y);
+	void set_coordinate(int x, int y);
+	void print();
 	//void print_table();
 };
 
