@@ -9,7 +9,8 @@ public:
 	
 	//variables
 	space *object_address;
-	int grid_size = 0;
+	int grid_size = 25;
+	
 		//linked list data and address
 	//ship type placeholder
 	int coordinate = 0;

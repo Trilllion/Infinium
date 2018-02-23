@@ -16,9 +16,8 @@ int main()
 	
 	
 	//creating grid
-	
-	int grid = head.input_grid_size();
-	head.grid_size = grid;
+	space over_grid[625];
+	int grid = head.grid_size;
 	head.array_to_int(head.coordinate_array);
 
 	//two fake variables to loop through grid parameters
@@ -30,6 +29,7 @@ int main()
 		while (f_x < grid)				// loop for x (0) value
 		{
 			head.create(f_x, f_y);			// create new space class object with parameters f_x and f_y which are used as constructor argument to set array
+			
 			f_x++;						// increase x value
 		}
 		
