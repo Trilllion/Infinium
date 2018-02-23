@@ -2,16 +2,13 @@
 #include "Classes.h"
 #include <iostream>
 #include <sstream>
+#include <array>
 
-int space::input_grid_size()
-{
-	int n;
-	std::cout << "Please enter grid size";
-	std::cin >> n;
-	return n;
-}
+
 
 // NEEDS CHECKING
+
+
 
 
 int space::array_to_int(int a[] )
@@ -44,9 +41,9 @@ void space::set_coordinate(int x, int y)
 	 
 }
 
-void space::print()
+void space::print_grid()
 {
-	std::cout << coordinate_array[0] << "-" << coordinate_array[1] << std::endl;
+	std::cout << "  +  ";
 }
 
 

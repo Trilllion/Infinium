@@ -22,7 +22,7 @@ int main()
 
 	//two fake variables to loop through grid parameters
 	int f_x = 0;
-	int f_y = 25;
+	int f_y = grid;
 	//COORDINATE INCREMENTATION AND OBJECT CREATION LOOP
 	for (int k = f_y; k > 0; k--)
 	{
@@ -34,10 +34,33 @@ int main()
 		}
 		
 	}
-	
-	for (int i = 0; i < grid*grid; i++)
-		over_grid[i].print();
-	
+	void print_grid();
+	{
+		std::cout << "  " ;
+		for (int i = 1; i <= grid; i++)
+		{
+			if (i < 10)
+			{
+				std::cout << "  " << i << "  ";
+			}
+			if (i >= 10)
+			{
+				std::cout << " " << i << "  ";
+			}
+		}
+		std::cout << "" << std::endl;
+		for (int k = grid; k > 0; k--)
+		{
+			std::cout << k;
+			for (int i = 0; i < grid; i++)
+			{
+				 over_grid[i].print_grid();
+			}
+			std::cout << "" << std::endl;
+			std::cout << "" << std::endl;
+
+		}
+	}
 	return 0;
 	
 }
