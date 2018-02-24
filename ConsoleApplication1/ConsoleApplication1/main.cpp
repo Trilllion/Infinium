@@ -4,7 +4,8 @@
 #include "stdafx.h"
 #include <iostream>
 #include "Classes.h"
-#include <array>
+#include"ships.h"
+#include <string>
 
 
 
@@ -13,7 +14,7 @@ int main()
 {
 	//objects
 	space head;
-	
+	ships obj;
 	
 	//creating grid
 	space over_grid[625];

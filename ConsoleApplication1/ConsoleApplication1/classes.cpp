@@ -1,8 +1,7 @@
 #include "stdafx.h"
 #include "Classes.h"
 #include <iostream>
-#include <sstream>
-#include <array>
+#include <string>
 
 
 
